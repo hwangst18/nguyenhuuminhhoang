@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tica's Tacos | Authentic Mexican Restaurant</title>
+  <link rel="stylesheet" href="lichsu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <img src="Mexicano.png" alt="El CoraZón Mexicano">
+    </div>
+        <ul class="nav-links">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="lichsu.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Khuyenmai.html">Promtion</a></li>
+            
+        </ul>
+        <div class="action-buttons">
+             <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="order-btn" onclick="window.location.href='thanhtoan.html'">Pay</button>
+
+        </div>
+		<div class="cart-icon" onclick="window.location.href='order.html'">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử</title>
+    <link rel="stylesheet" href="lichsu.css">
+</head>
+<body>
+<section class="section"><!-- Start thumb -->
+<div class="tbox-slider"><!-- tbox-slider-1--><img src="lichsu.jpg" alt="1">
+<div class="container tcontainer-text-block">
+<div class="ttext-block">
+</div>
+</div>
+</div>
+ </section>
+ 
+<!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <h2 class="newsletter-title">Join Our Taco Club</h2>
+        <p class="newsletter-subtitle">Subscribe to our newsletter for exclusive offers, new menu items, and taco tips!</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+    </section>
+	
+  <!-- Footer - Moved outside the menu section -->
+  <footer>
+  <div class="footer-content">
+    <div class="footer-info">
+      <div class="footer-logo">EL <span>CoraZon</span></div>
+      <p class="footer-desc">Bringing the authentic taste of Mexico to your neighborhood since 1985. Hand-crafted tacos made with love and tradition.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/tacobell"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/tacobell/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/tacobell"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@TacoBell"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-links-container">
+      <h3 class="footer-heading">Library</h3>
+      <ul class="footer-links">
+       <li><a href="Home.html">Home</a></li>
+        <li><a href="lichsu.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Order.html">Order</a></li>
+      </ul>
+    </div>
+    <div class="footer-links-container">
+      <h3 class="footer-heading">Opening Hours</h3>
+      <ul class="footer-links">
+        <li>Monday - Thursday: 11AM - 9PM</li>
+        <li>Friday - Saturday: 11AM - 11PM</li>
+        <li>Sunday: 12PM - 8PM</li>
+      </ul>
+    </div>
+    <div class="footer-links-container">
+      <h3 class="footer-heading">Contact Us</h3>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> 123 Taco Street, Mexico City</li>
+        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+        <li><i class="fas fa-envelope"></i> info@ticastacos.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tica's Tacos. All Rights Reserved.</p>
+  </div>
+</footer>
+    <script>
+        // JavaScript for header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+		
+		// Customer Support Chat Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const chatIcon = document.getElementById('chatIcon');
+    const chatForm = document.getElementById('chatForm');
+    const closeChat = document.getElementById('closeChat');
+    const sendMessage = document.getElementById('sendMessage');
+    const messageInput = document.getElementById('messageInput');
+    const chatMessages = document.getElementById('chatMessages');
+    
+    // Open chat form when icon is clicked
+    chatIcon.addEventListener('click', function() {
+        chatForm.classList.add('active');
+        chatForm.style.animation = 'fadeInUp 0.3s forwards';
+    });
+    
+    // Close chat form when close button is clicked
+    closeChat.addEventListener('click', function() {
+        chatForm.classList.remove('active');
+    });
+    
+    // Send message function
+    function sendUserMessage() {
+        const message = messageInput.value.trim();
+        if (message !== '') {
+            // Create user message element
+            const userMessage = document.createElement('div');
+            userMessage.className = 'chat-message user';
+            
+            const currentTime = new Date();
+            const hours = currentTime.getHours().toString().padStart(2, '0');
+            const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}`;
+            
+            userMessage.innerHTML = `
+                <div class="message-content">
+                    <p>${message}</p>
+                    <span class="message-time">${timeString}</span>
+                </div>
+                <div class="chat-avatar">
+                    <img src="Res name.png" alt="User">
+                </div>
+            `;
+            
+            // Add user message to chat
+            chatMessages.appendChild(userMessage);
+            
+            // Clear input
+            messageInput.value = '';
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Simulate support response after a delay
+            setTimeout(function() {
+                // Create support message element
+                const supportMessage = document.createElement('div');
+                supportMessage.className = 'chat-message support';
+                
+                supportMessage.innerHTML = `
+                    <div class="chat-avatar">
+                        <img src="supportagent.jpg" alt="Support Agent">
+                    </div>
+                    <div class="message-content">
+                        <p>Thank you for your message. Our team will get back to you shortly.</p>
+                        <span class="message-time">${timeString}</span>
+                    </div>
+                `;
+                
+                // Add support message to chat
+                chatMessages.appendChild(supportMessage);
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 1000);
+        }
+    }
+    
+    // Send message when send button is clicked
+    sendMessage.addEventListener('click', sendUserMessage);
+	
+closeChat.addEventListener('click', function() {
+    chatForm.classList.remove('active');
+    chatForm.style.animation = 'fadeOutDown 0.3s forwards';
+});
+    
+    // Send message when Enter key is pressed (without Shift)
+    messageInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendUserMessage();
+        }
+    });
+    
+    // Auto-expand textarea as user types
+    messageInput.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight < 80) ? this.scrollHeight + 'px' : '80px';
+    });
+});
+    </script>
+	<!-- Customer Support Chat Icon and Form -->
+<div class="chat-support-container">
+    <!-- Chat Icon -->
+    <div class="chat-icon" id="chatIcon">
+        <i class="fas fa-comments"></i>
+        <span class="chat-pulse"></span>
+    </div>
+    
+    <!-- Chat Form -->
+    <div class="chat-form" id="chatForm">
+        <div class="chat-header">
+            <h3>Customer Support</h3>
+            <button class="close-chat" id="closeChat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message support">
+                <div class="chat-avatar">
+                    <img src="C:\Users\Hoang\Documents\Nhà hàng El Corazon\image\supportagent.jpg" alt="Support Agent">
+                </div>
+                <div class="message-content">
+                    <p>Hello! Welcome to Tica's Tacos. How can I help you today?</p>
+                    <span class="message-time">Now</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <textarea placeholder="Type your message..." id="messageInput"></textarea>
+            <button id="sendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

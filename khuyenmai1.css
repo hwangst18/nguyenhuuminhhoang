@@ -1,0 +1,63 @@
+ * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Container hiển thị hình ảnh */
+.promo-container {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    height: 450px; /* Định chiều cao để đảm bảo không bị lệch */
+    margin-top: 80px; /* THÊM DÒNG NÀY để tránh bị header che */
+}
+
+/* Thanh trượt ảnh */
+.promo-slider {
+    display: flex;
+    width: 400%; /* 4 ảnh, mỗi ảnh chiếm 100% width */
+    transition: transform 0.5s ease-in-out;
+}
+
+.promo-slider img {
+    width: 100vw; /* Chiếm toàn bộ chiều ngang trang */
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Nút mũi tên trái/phải */
+/* Nút mũi tên trái/phải với nền chấm bi */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('https://margs.com/path-to-dot-pattern.png') repeat;
+    color: #FF6600; /* Màu của footer */
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 50%;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}

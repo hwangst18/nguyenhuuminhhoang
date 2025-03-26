@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El CoraZon | Authentic Mexican Restaurant</title>
+    <link rel="stylesheet" href="Order.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <img src="Mexicano.png" alt="El CoraZón Mexicano">
+    </div>
+        <ul class="nav-links">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="lichsu.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Khuyenmai.html">Promtion</a></li>
+            
+        </ul>
+        <div class="action-buttons">
+             <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="order-btn" onclick="window.location.href='thanhtoan.html'">Pay</button>
+
+        </div>
+		<div class="cart-icon" onclick="window.location.href='order.html'">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-container">
+        <!-- Appetizers -->
+        <div class="menu-category animate-on-scroll">
+            <h2>SALADS</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('Guacamole.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Guacamole</h3>
+                        <p class="item-description">Fresh avocados mixed with tomatoes, onions, cilantro, and lime juice a refeshing and satisfying sauce to dip with tacos and nachos, or simply any other favorite snacks of yours.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="105000">Small</button>
+                                <button class="size-btn" data-size="medium" data-price="115000 ">Medium</button>
+                                <button class="size-btn" data-size="large" data-price="125000">Large</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">105.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('Ensalada.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Ensalada de Nopal</h3>
+                        <p class="item-description">Made with cactus pads, red onion, tomato, avocado, cilantro, lime juice, olive oil, and cheese. Often served as an appetizer or taco filling</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="115000">Small</button>
+                                <button class="size-btn" data-size="medium" data-price="125000">Medium</button>
+                                <button class="size-btn" data-size="large" data-price="135000">Large</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">115.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('Bionico.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Bionico</h3>
+                        <p class="item-description">A fruit salad from Guadalajara with papaya, melon, strawberries, apples, bananas, topped with creamy sauce, granola, coconut, and raisins.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="125000">Small</button>
+                                <button class="size-btn" data-size="medium" data-price="135000">Medium</button>
+                                <button class="size-btn" data-size="large" data-price="145000">Large</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">125.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('Ensalada pollo.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Ensalada de Pollo</h3>
+                        <p class="item-description">A hearty chicken salad make with shredded chicken, lettuce, avocado, tomato, corn, and black beans, dressed with lime juice and cilantro for a refeshing and satisfying dish.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="140000">Small</button>
+                                <button class="size-btn" data-size="medium" data-price="150000">Medium</button>
+                                <button class="size-btn" data-size="large" data-price="160000">Large</button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">140.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TACOS -->
+        <div class="menu-category animate-on-scroll">
+            <h2>TACOS</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco.jpeg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">El CoraZon Taco</h3>
+                        <p class="item-description">Our MUST-TRY taco with a variety of fillings, from meats and seafood to vegetables and diverse sauces, bringing your unique flavor combination to life.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="215000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="225000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="235000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">215.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco pollo.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Pollo</h3>
+                        <p class="item-description">Grilled or shredded chicken taco seasoned with herbs and spices, served with onions, shredded cabbage, spicy mayonnaise sauce, cilantro, avocado, and fresh green sauce.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="60000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="70000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="80000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">60.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco pescado.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Pescado</h3>
+                        <p class="item-description">Crispy or grilled fish taco, crunchy on the outside, tender on the inside, paired with shredded cabbage, spicy mayonnaise sauce, and fresh lime.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="68000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="78000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="88000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">68.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco el jefe.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">El Jefe</h3>
+                        <p class="item-description">A hearty taco with tender, marinated grilled beef, topped with onions, cilantro, and special; salsa, delivering a powerful, rich experience.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="55000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="65000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="75000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">55.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco camaron.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Camarón</h3>
+                        <p class="item-description">Fresh shrimp taco, either grilled or fried, topped with smoky chipotle sauce, lettuce, and silced avocado, achieving the perfect balance of sweet and spicy.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="65000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="75000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="85000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">65.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco chori.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Chori con Queso</h3>
+                        <p class="item-description">Spicy Chorizo sausage taco combined with melted cheese, sauteed onions, smoky chipotle sauce, lettuce, and silced avocado and cilantro, offering a rich, indulgent flavor.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="70000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="80000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="90000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">70.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco carnitas.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Carnitas</h3>
+                        <p class="item-description">Slow-cooked pork taco, tender and juicy, lightly fried for a crispy outside, served with onions, cilantro, and salsa.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="55000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="65000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="75000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">55.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco birria.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Birria de Borrego</h3>
+                        <p class="item-description">Lamp taco braised in a spicy, aromatic broth, served with chopped onions, cilantro, and flavorful dipping sauce.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="65000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="75000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="85000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">65.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+				
+				<div class="menu-item">
+                    <div class="item-image" style="background-image: url('taco barbacoa.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Barbacoa</h3>
+                        <p class="item-description">Slow-cooked beef taco, simmered with banana leaves, spices, and chiles, resulting in a fragrant, rich, and traditional taste.</p>
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="60000">Small </button>
+                                <button class="size-btn" data-size="medium" data-price="70000">Medium </button>
+                                <button class="size-btn" data-size="large" data-price="80000">Large </button>
+                            </div>
+                            <div class="spice-options">
+                                <span class="option-label">Spice Level:</span>
+                                <button class="spice-btn active" data-spice="mild">Mild</button>
+                                <button class="spice-btn" data-spice="spicy">Spicy</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">60.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <!-- Beverages -->
+        <div class="menu-category animate-on-scroll">
+            <h2>Beverages</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('saratoga.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Bottled water</h3>
+                        
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="20000">Normal size</button>
+                                
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">20.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+      
+
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('coca.jpg')"></div>
+                    <div class="item-info">
+                        <h3 class="item-name">Coca-Cola</h3>
+                        
+                        <div class="item-options">
+                            <div class="size-options">
+                                <span class="option-label">Size:</span>
+                                <button class="size-btn active" data-size="small" data-price="25000">Regular</button>
+                                
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        <div class="item-price">25.000 VND</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Container - Moved outside the menu section -->
+    <div class="cart-container">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <span class="toggle-cart">▲</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-summary">
+            <span>Total:</span>
+            <span class="cart-total">0 VND</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkoutBtn = document.querySelector('.checkout-btn');
+        checkoutBtn.addEventListener('click', function() {
+            const total = document.querySelector('.cart-total').textContent; // Lấy tổng tiền từ giỏ hàng
+            window.location.href = `thanhtoan.html?total=${encodeURIComponent(total)}`; // Chuyển sang trang thanh toán với tổng tiền
+        });
+    });
+</script>
+
+
+    </div>
+		
+    <!-- Footer - Moved outside the menu section -->
+  <footer>
+  <div class="footer-content">
+    <div class="footer-info">
+      <div class="footer-logo">EL <span>CoraZon</span></div>
+      <p class="footer-desc">Bringing the authentic taste of Mexico to your neighborhood since 1985. Hand-crafted tacos made with love and tradition.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/tacobell"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/tacobell/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/tacobell"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@TacoBell"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-links-container">
+      <h3 class="footer-heading">Library</h3>
+      <ul class="footer-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="lichsu.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Order.html">Order</a></li>
+      </ul>
+    </div>
+    <div class="footer-links-container">
+      <h3 class="footer-heading">Opening Hours</h3>
+      <ul class="footer-links">
+        <li>Monday - Thursday: 11AM - 9PM</li>
+        <li>Friday - Saturday: 11AM - 11PM</li>
+        <li>Sunday: 12PM - 8PM</li>
+      </ul>
+    </div>
+    <div class="footer-links-container">
+      <h3 class="footer-heading">Contact Us</h3>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> 123 Taco Street, Mexico City</li>
+        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+        <li><i class="fas fa-envelope"></i> info@ticastacos.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tica's Tacos. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+    <script>
+	document.addEventListener('DOMContentLoaded', function() {
+        initializeCart();
+        initializeSizeAndSpiceButtons();
+        initializeQuantityButtons();
+        initializeScrollAnimation();
+        
+        // Thêm vào hàm này để xử lý khi nhấn nút "Proceed to Checkout"
+        const checkoutBtn = document.querySelector('.checkout-btn');
+        checkoutBtn.addEventListener('click', function() {
+            const total = document.querySelector('.cart-total').textContent; // Lấy tổng tiền từ giỏ hàng
+            window.location.href = `thanhtoan.html?total=${encodeURIComponent(total)}`; // Chuyển sang trang thanh toán và truyền tổng tiền
+        });
+    });
+	
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+    // Original functionality preserved
+    initializeCart();
+    initializeSizeAndSpiceButtons();
+    initializeQuantityButtons();
+    initializeScrollAnimation();
+    
+    // Add new enhanced animations and effects
+    addHoverEffects();
+    addParallaxEffect();
+    addFoodParticleEffects();
+    enhanceMenuItemsAppearance();
+    addHeroSectionAnimations();
+});
+
+// Cart functionality
+function initializeCart() {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItems = document.querySelector('.cart-items');
+    const cartTotal = document.querySelector('.cart-total');
+    const cartHeader = document.querySelector('.cart-header');
+    const cartContainer = document.querySelector('.cart-container');
+    const checkoutBtn = document.querySelector('.checkout-btn');
+
+    let cart = [];
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const itemInfo = this.closest('.item-info');
+            const menuItem = this.closest('.menu-item');
+            
+            // Create a copy of the menu item that flies to the cart
+            createFlyingElement(menuItem, cartContainer);
+            
+            const name = itemInfo.querySelector('.item-name').textContent;
+            const price = parseFloat(itemInfo.querySelector('.item-price').textContent.replace('$', ''));
+            const quantity = parseInt(itemInfo.querySelector('.quantity-display').textContent);
+            const size = itemInfo.querySelector('.size-btn.active').textContent;
+            const spice = itemInfo.querySelector('.spice-btn.active')?.textContent || 'N/A';
+            
+            const item = {
+                name,
+                price,
+                quantity,
+                size,
+                spice,
+                total: price * quantity
+            };
+            
+            cart.push(item);
+            updateCart();
+            
+            // Show cart with bounce animation
+            cartContainer.classList.add('expanded');
+            cartContainer.style.animation = 'cartBounce 0.5s ease';
+            setTimeout(() => {
+                cartContainer.style.animation = '';
+            }, 500);
+        });
+    });
+
+    cartHeader.addEventListener('click', function() {
+        cartContainer.classList.toggle('expanded');
+    });
+
+    // Add confetti effect to checkout button
+    checkoutBtn.addEventListener('click', function() {
+        createConfettiEffect();
+        alert('Thank you for your order!');
+    });
+
+    function updateCart() {
+        cartItems.innerHTML = '';
+        let total = 0;
+        
+        cart.forEach((item, index) => {
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.style.animationDelay = `${index * 0.1}s`;
+            cartItem.innerHTML = `
+                <div class="cart-item-name">${item.quantity}x ${item.name} (${item.size}, ${item.spice})</div>
+                <div class="cart-item-price">$${(item.total).toFixed(2)}</div>
+                <button class="remove-item" data-index="${index}">✕</button>
+            `;
+            cartItems.appendChild(cartItem);
+            total += item.total;
+        });
+        
+        cartTotal.textContent = '$' + total.toFixed(2);
+        
+        // Add fade-in-count-up animation to the total
+        animateNumbers(cartTotal, total);
+        
+        // Add event listeners to remove buttons
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const index = parseInt(this.dataset.index);
+                
+                // Animate the item being removed
+                const itemToRemove = this.closest('.cart-item');
+                itemToRemove.style.animation = 'removeItem 0.3s forwards';
+                
+                setTimeout(() => {
+                    cart.splice(index, 1);
+                    updateCart();
+                }, 300);
+            });
+        });
+    }
+}
+
+// Animation for flying elements to cart
+function createFlyingElement(sourceElement, targetElement) {
+    const rect = sourceElement.getBoundingClientRect();
+    const targetRect = targetElement.getBoundingClientRect();
+    
+    const flyingEl = document.createElement('div');
+    flyingEl.style.position = 'fixed';
+    flyingEl.style.width = '30px';
+    flyingEl.style.height = '30px';
+    flyingEl.style.backgroundColor = '#e63946';
+    flyingEl.style.borderRadius = '50%';
+    flyingEl.style.zIndex = '1000';
+    flyingEl.style.top = `${rect.top + rect.height/2}px`;
+    flyingEl.style.left = `${rect.left + rect.width/2}px`;
+    flyingEl.style.opacity = '0.8';
+    
+    document.body.appendChild(flyingEl);
+    
+    const startTime = performance.now();
+    const duration = 800;
+    
+    function animate(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Bezier curve path for more natural movement
+        const easeOutQuad = t => t * (2 - t);
+        const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        
+        const curvedProgress = easeInOutQuad(progress);
+        
+        // Calculate position with arc
+        const x = rect.left + (targetRect.right - 50 - rect.left) * curvedProgress;
+        const yOffset = Math.sin(curvedProgress * Math.PI) * 100;
+        const y = rect.top + (targetRect.top - rect.top) * curvedProgress - yOffset;
+        
+        // Update position and scale
+        flyingEl.style.transform = `translate(${x - rect.left}px, ${y - rect.top}px) scale(${1 - 0.5 * progress})`;
+        flyingEl.style.opacity = `${1 - progress * 0.5}`;
+        
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        } else {
+            document.body.removeChild(flyingEl);
+            // Make the cart bounce
+            targetElement.classList.add('bounce');
+            setTimeout(() => targetElement.classList.remove('bounce'), 300);
+        }
+    }
+    
+    requestAnimationFrame(animate);
+}
+
+// Size and spice button functionality
+function initializeSizeAndSpiceButtons() {
+    const sizeButtons = document.querySelectorAll('.size-btn');
+    const spiceButtons = document.querySelectorAll('.spice-btn');
+    
+    sizeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const parent = this.closest('.size-options');
+            parent.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            updateItemPrice(this);
+            
+            // Add ripple effect
+            createRippleEffect(this);
+        });
+    });
+    
+    spiceButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const parent = this.closest('.spice-options');
+            parent.querySelectorAll('.spice-btn').forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Add ripple effect
+            createRippleEffect(this);
+            
+            // Add chili animation if spicy is selected
+            if (this.dataset.spice === 'spicy') {
+                const menuItem = this.closest('.menu-item');
+                showChiliEffect(menuItem);
+            }
+        });
+    });
+    
+    function updateItemPrice(sizeButton) {
+        const price = sizeButton.dataset.price;
+        const itemInfo = sizeButton.closest('.item-info');
+        const priceDisplay = itemInfo.querySelector('.item-price');
+        
+        // Animate price change
+        animateNumbers(priceDisplay, price);
+    }
+}
+
+// Create ripple effect for buttons
+function createRippleEffect(button) {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+    button.appendChild(ripple);
+    
+    const diameter = Math.max(button.clientWidth, button.clientHeight);
+    
+    ripple.style.width = ripple.style.height = `${diameter}px`;
+    ripple.style.left = `${-diameter/2 + button.offsetWidth/2}px`;
+    ripple.style.top = `${-diameter/2 + button.offsetHeight/2}px`;
+    
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+}
+
+// Add spicy animation effect
+function showChiliEffect(menuItem) {
+    for (let i = 0; i < 3; i++) {
+        const chili = document.createElement('span');
+        chili.innerHTML = '🌶️';
+        chili.classList.add('floating-chili');
+        chili.style.left = `${Math.random() * 80 + 10}%`;
+        chili.style.animationDelay = `${i * 0.2}s`;
+        
+        menuItem.appendChild(chili);
+        
+        setTimeout(() => {
+            chili.remove();
+        }, 2000);
+    }
+}
+
+// Animated number counting
+function animateNumbers(element, finalValue) {
+    const startValue = parseFloat(element.textContent.replace(/[^0-9.-]+/g, '')) || 0;
+    const duration = 500; // ms
+    const startTime = performance.now();
+    
+    function updateNumber(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Use easing function for smoother animation
+        const easedProgress = 1 - Math.pow(1 - progress, 3); // Cubic ease out
+        
+        const currentValue = startValue + (finalValue - startValue) * easedProgress;
+        
+        // Check if we're animating a price
+        if (element.textContent.includes('$')) {
+            element.textContent = '$' + currentValue.toFixed(2);
+        } else {
+            element.textContent = currentValue.toFixed(0);
+        }
+        
+        if (progress < 1) {
+            requestAnimationFrame(updateNumber);
+        }
+    }
+    
+    requestAnimationFrame(updateNumber);
+}
+
+// Initialize quantity buttons
+function initializeQuantityButtons() {
+    const decreaseButtons = document.querySelectorAll('.decrease');
+    const increaseButtons = document.querySelectorAll('.increase');
+    
+    decreaseButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const display = this.nextElementSibling;
+            let quantity = parseInt(display.textContent);
+            if (quantity > 1) {
+                quantity--;
+                animateNumbers(display, quantity);
+                
+                // Add button press animation
+                this.classList.add('pressed');
+                setTimeout(() => this.classList.remove('pressed'), 200);
+            }
+        });
+    });
+    
+    increaseButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const display = this.previousElementSibling;
+            let quantity = parseInt(display.textContent);
+            quantity++;
+            animateNumbers(display, quantity);
+            
+            // Add button press animation
+            this.classList.add('pressed');
+            setTimeout(() => this.classList.remove('pressed'), 200);
+        });
+    });
+}
+
+// Scroll animation
+function initializeScrollAnimation() {
+    function checkScroll() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        elements.forEach((element, index) => {
+            const position = element.getBoundingClientRect();
+            // Stagger the animations based on index
+            if(position.top < window.innerHeight * 0.9) {
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, index * 100);
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Check on load
+}
+
+// Add hover effects for menu items
+function addHoverEffects() {
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    menuItems.forEach(item => {
+        // Create and append a shine overlay
+        const shineOverlay = document.createElement('div');
+        shineOverlay.classList.add('shine-overlay');
+        item.appendChild(shineOverlay);
+        
+        item.addEventListener('mouseenter', function() {
+            // Trigger animation for the name
+            const itemName = this.querySelector('.item-name');
+            itemName.style.animation = 'textGlow 1s ease infinite alternate';
+            
+            // Show a subtle glow around the item
+            this.style.boxShadow = '0 10px 25px rgba(230, 57, 70, 0.3), 0 0 15px rgba(230, 57, 70, 0.2)';
+            
+            // Animate the shine overlay
+            shineOverlay.style.opacity = '1';
+            shineOverlay.style.animation = 'shimmerEffect 1.2s ease-in-out';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            // Reset animations
+            const itemName = this.querySelector('.item-name');
+            itemName.style.animation = '';
+            
+            // Reset the glow
+            this.style.boxShadow = '';
+            
+            // Reset shine overlay
+            shineOverlay.style.opacity = '0';
+            shineOverlay.style.animation = '';
+        });
+    });
+}
+
+// Add parallax effect to hero section
+function addParallaxEffect() {
+    const hero = document.querySelector('.hero');
+    
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        
+        if (scrollPosition < window.innerHeight) {
+            // Move background at a different rate than the foreground
+            hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+            
+            // Adjust text elements
+            const title = hero.querySelector('h1');
+            const desc = hero.querySelector('p');
+            const btn = hero.querySelector('.btn');
+            
+            title.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+            desc.style.transform = `translateY(${scrollPosition * 0.15}px)`;
+            btn.style.transform = `translateY(${scrollPosition * 0.1}px)`;
+        }
+    });
+}
+
+// Add food particle effects
+function addFoodParticleEffects() {
+    // Create floating food emojis that appear occasionally
+    const foodEmojis = ['🌮', '🌯', '🍹', '🌶️', '🍚', '🥑'];
+    const container = document.querySelector('.menu-container');
+    
+    // Create food particles at random intervals
+    setInterval(() => {
+        if (Math.random() > 0.7 && document.visibilityState === 'visible') {
+            createFoodParticle();
+        }
+    }, 2000);
+    
+    function createFoodParticle() {
+        const emoji = foodEmojis[Math.floor(Math.random() * foodEmojis.length)];
+        const particle = document.createElement('div');
+        
+        particle.textContent = emoji;
+        particle.className = 'food-particle';
+        particle.style.left = `${Math.random() * 90 + 5}%`;
+        particle.style.fontSize = `${Math.random() * 20 + 15}px`;
+        particle.style.opacity = '0';
+        
+        container.appendChild(particle);
+        
+        // Trigger animation after a small delay to ensure opacity transition works
+        setTimeout(() => {
+            particle.style.opacity = '0.8';
+            particle.style.transform = `translateY(-${Math.random() * 150 + 100}px) rotate(${Math.random() * 360}deg)`;
+        }, 10);
+        
+        // Remove particle after animation completes
+        setTimeout(() => {
+            particle.style.opacity = '0';
+            setTimeout(() => particle.remove(), 1000);
+        }, 3000);
+    }
+}
+
+// Enhanced menu items appearance
+function enhanceMenuItemsAppearance() {
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    menuItems.forEach((item, index) => {
+        // Reset the initial animation
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(50px)';
+        
+        // Add staggered entrance with a more complex animation
+        setTimeout(() => {
+            item.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+        }, 100 + index * 150);
+    });
+}
+
+// Add hero section animations
+function addHeroSectionAnimations() {
+    const hero = document.querySelector('.hero');
+    const btn = hero.querySelector('.btn');
+    
+    // Add a shine effect to the button
+    btn.addEventListener('mouseenter', function() {
+        this.style.animation = 'pulse 1s infinite, sheen 3s infinite';
+        this.style.transform = 'scale(1.05)';
+    });
+    
+    btn.addEventListener('mouseleave', function() {
+        this.style.animation = 'pulse 2s infinite';
+        this.style.transform = 'scale(1)';
+    });
+}
+
+// Confetti effect for checkout button
+function createConfettiEffect() {
+    const colors = ['#e63946', '#f1faee', '#a8dadc', '#457b9d', '#1d3557'];
+    const confettiContainer = document.createElement('div');
+    confettiContainer.className = 'confetti-container';
+    document.body.appendChild(confettiContainer);
+    
+    for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.top = `${Math.random() * 20 + 80}%`;
+        confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+        confetti.style.width = `${Math.random() * 10 + 5}px`;
+        confetti.style.height = `${Math.random() * 5 + 5}px`;
+        confetti.style.animationDuration = `${Math.random() * 2 + 1}s`;
+        confetti.style.animationDelay = `${Math.random() * 0.5}s`;
+        
+        confettiContainer.appendChild(confetti);
+    }
+    
+    setTimeout(() => {
+        confettiContainer.remove();
+    }, 3000);
+}
+
+		
+    </script>
+</body>
+</html>
